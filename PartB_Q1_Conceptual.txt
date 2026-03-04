@@ -1,0 +1,32 @@
+Q1️⃣ Conceptual
+Explain:
+
+Difference between break and continue (with example)
+----> Break immediately terminates the entire loop and comes out of loop. Control flows to the first statement after the loop structure.
+	Continue skips the rest of the code in the current iteration only. Control jumps back to the top of the loop for the next iteration.
+
+
+What is the else clause in for / while loops?
+
+When does it execute?
+----> The else clause executes if the loop runs out of items (for) or the condition becomes false (while). It does not execute If the loop is stopped prematurely by a break statement. 
+
+Practical use case (hint: search pattern)
+----> While searching for an item in a collection. the else clause allows us to handle the "item not found" scenario without using a "flag" variable. 
+numbers = [1, 3, 5, 7]
+target = 4
+
+for num in numbers:
+    if num == target:
+        print("Found it!")
+        break
+else:
+    # Executes ONLY if the loop finishes without hitting 'break'
+    print("Not found in list.")
+
+
+here target is never found, the loop exhausts the list, and the else block executes, printing "Not found in list.". 
+
+
+
+
