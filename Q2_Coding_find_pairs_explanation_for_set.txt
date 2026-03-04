@@ -1,0 +1,2 @@
+Instead of re-scanning the list for every number, we can use a set to store numbers we have already seen. As we iterate, we calculate the complement (target - current number). If the complement is in our set, we’ve found a pair.
+As looking up an item in a set takes O(1) (constant time) on average, whereas a nested loop takes O(n).
